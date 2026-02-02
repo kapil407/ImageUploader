@@ -24,6 +24,6 @@ database()
       console.log(`server is runing at ${port}`);
     });
   })
-  .catch(() => {
-    console.log("database is not connected !!!!");
+  .catch((error) => {
+    console.log("database is not connected !!!!", error);
   });
